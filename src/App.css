@@ -1,0 +1,124 @@
+/* App.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4fb;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin-top: 50px;
+    height: 100vh;
+  }
+  
+  .todo-app {
+    background: white;
+    border-radius: 12px;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the title */
+    background-color: #ff6200;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    position: relative; /* Allows positioning of the menu button */
+  }
+  
+  .menu-button {
+    position: absolute; /* Position the menu button */
+    left: 20px; /* Keep it aligned to the left */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  /* Todo List */
+  .todo-container {
+    margin-top: 20px;
+  }
+  
+  .todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .todo-text {
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .todo-text.completed {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .delete-button {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Add Task Section */
+  .add-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .task-input {
+    width: calc(100% - 130px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+
+    .task-input:focus {
+        outline: none;
+        border: 1px solid #ff6200; 
+    }
+  
+  .add-button {
+    height: 40px;
+    background-color: #ff6200;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    /* padding: 2px 20px; Increase padding for larger size */
+    padding: auto;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-button:hover {
+    background-color: #ffffff;
+    color: #ff6200;
+    border: 2px solid #ff6200;
+  }
